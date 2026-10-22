@@ -1,0 +1,18 @@
+{
+  "name": "yuketang-video-autoplay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "雨课堂课程视频自动连播（CDP 复用已登录 Chrome，不加速、不答题，只负责把视频播完）",
+  "scripts": {
+    "play": "node autoplay.mjs",
+    "play:one": "node play-one.mjs",
+    "postinstall": "node -e \"console.log('done')\""
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
